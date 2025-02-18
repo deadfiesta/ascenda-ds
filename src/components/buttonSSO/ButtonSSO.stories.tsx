@@ -8,6 +8,10 @@ const meta: Meta<typeof ButtonSSO> = {
     tags: ['autodocs'],
     parameters: {
         layout: 'centered',
+        design: {
+            type: "figma",
+            url: "https://www.figma.com/design/1RQVVA3w5rXz3qznV6USuz/%F0%9F%93%96-Ascenda-Components?node-id=14920-45549&t=4dJcRW3aGCa8Sa9E-4"
+        }
     },
 }
 
