@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-
+import "../src/ascenda.css";
 
 const preview: Preview = {
   parameters: {
