@@ -59,7 +59,7 @@ export const Button = ({
       variantStyles[variant],
       alignStyles[align],
       sizeStyles[size],
-      fullWidth && 'w-button-fullWidth',
+      fullWidth && 'w-button-maxwidth',
       className
       )}
       onClick={onClick}
