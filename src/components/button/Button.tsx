@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { Icon } from '../icon';
 import { IconName } from '../icon/IconPaths';
+import { Spinner } from '../spinner';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
   mode?: 'dark' | 'light';
@@ -11,8 +12,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: IconName;
   label: string;
   className?: string;
-  maxWidth?: boolean;
+  fullWidth?: boolean;
   disabled?: boolean;
+  isLoading?: boolean;
+  onClick?: () => void;
 }
 
 export const Button = ({
@@ -23,14 +26,15 @@ export const Button = ({
   iconLeft = false,
   iconRight = true,
   icon = "arrowRightFull",
-  maxWidth = false,
+  fullWidth = false,
+  isLoading = false,
   disabled = false,
   label,
   className,
+  onClick,
   ...props
 }: ButtonProps) => {
   const baseStyles = "flex items-center gap-2 rounded-sm font-bold max-w-[430px] focus-visible:outline-2 focus-visible:outline-focus-ring cursor-pointer disabled:cursor-not-allowed";
-
   const variantStyles = {
     primary: mode === 'light' 
     ? 'bg-cloudburst-500 border-cloudburst-500 border-1 text-neutral-white hover:bg-cloudburst-400 active:bg-cloudburst-700 disabled:bg-cloudburst-150 disabled:border-cloudburst-150 disabled:text-cloudburst-extralight' 
@@ -55,15 +59,17 @@ export const Button = ({
       variantStyles[variant],
       alignStyles[align],
       sizeStyles[size],
-      maxWidth && 'w-button-maxwidth',
+      fullWidth && 'w-button-fullWidth',
       className
       )}
-      disabled={disabled}
+      onClick={onClick}
+      disabled={isLoading ? true : disabled}
       {...props}
     >
-      {iconLeft && <Icon name={icon} />}
+      {iconLeft && !isLoading && <Icon name={icon} />}
       {label}
-      {iconRight && <Icon name={icon} />}
+      {iconRight && !isLoading && <Icon name={icon} />}
+      {isLoading && <Spinner />}
     </button>
   );
 };

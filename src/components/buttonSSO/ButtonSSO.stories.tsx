@@ -4,7 +4,7 @@ import { ButtonSSO } from './ButtonSSO';
 
 const meta: Meta<typeof ButtonSSO> = {
     component: ButtonSSO,
-    title: 'Components/Button (SSO)',
+    title: 'Components/Buttons/Button (SSO)',
     tags: ['autodocs'],
     parameters: {
         layout: 'centered',

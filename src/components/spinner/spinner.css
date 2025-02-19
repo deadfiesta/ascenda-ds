@@ -1,0 +1,77 @@
+:root {
+    --stroke-length: 1;
+    --stroke-length-small: .1;
+    --stroke-length-negative: .9;
+    --animation-duration: 1500ms;
+    --easing-curve: cubic-bezier(0.42, 0, 0.36, 1);
+}
+
+.spinning {
+    animation:
+        rotateStart var(--animation-duration) linear,
+        rotateLoop var(--animation-duration) linear infinite var(--animation-duration);
+}
+
+.trim {
+    animation:
+        begin var(--animation-duration) var(--easing-curve),
+        loop var(--animation-duration) var(--easing-curve) infinite var(--animation-duration);
+}
+
+@keyframes rotateStart {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(290deg);
+    }
+}
+
+@keyframes rotateLoop {
+    0% {
+        -moz-transform: rotate(-110deg);
+        transform: rotate(-110deg);
+    }
+
+    100% {
+        -moz-transform: rotate(290deg);
+        transform: rotate(290deg);
+    }
+}
+
+@keyframes begin {
+    0% {
+        stroke-dasharray: 0, var(--stroke-length);
+    }
+
+    32% {
+        stroke-dashoffset: 0;
+    }
+
+    53% {
+        stroke-dasharray: var(--stroke-length);
+    }
+
+    100% {
+        stroke-dashoffset: var(--stroke-length-negative);
+    }
+}
+
+@keyframes loop {
+    0% {
+        stroke-dasharray: var(--stroke-length-small), var(--stroke-length);
+    }
+
+    32% {
+        stroke-dashoffset: 0;
+    }
+
+    53% {
+        stroke-dasharray: var(--stroke-length);
+    }
+
+    100% {
+        stroke-dashoffset: var(--stroke-length-negative);
+    }
+}

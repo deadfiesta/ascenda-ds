@@ -6,62 +6,55 @@ import { Button } from './Button';
  */
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: 'Components/Button',
+  title: 'Components/Buttons/Button',
   tags: ['autodocs'],
   argTypes: {
-    variant: {
-      table: {
-        category: "Basic"
-      }
-    },
-    className: {
-      table: {
-        disable: true
-      }
-    },
-    label: {
-      table: { category: "Basic" }
-    },
-    align: {
-      table: { category: "Basic" }
-    },
+    variant: { table: { category: 'Basic' } },
+    className: { table: { disable: true } },
+    label: { table: { category: 'Basic' } },
+    align: { table: { category: 'Basic' } },
+    mode: { table: { category: 'Basic' } },
     size: {
       defaultValue: 'large',
-      table: { category: "Basic" }
+      table: { category: 'Basic' }
     },
-    mode: {
-      table: { category: "Basic" }
-    },
-    maxWidth: {
+    fullWidth: {
       defaultValue: false,
-      table: { category: "Basic" }
+      description: 'Stretch the button to max width or fit content',
+      table: { category: 'Basic' }
     },
     icon: {
       control: {type: 'select'},
-      table: { category: "Icon" },
+      table: { category: 'Icon' },
     },
     iconLeft: {
-      control: { type: "boolean" },
+      control: { type: 'boolean' },
       defaultValue: false,
-      description: "Show icon on the left side",
-      table: { category: "Icon" },
+      description: 'Show icon on the left side',
+      table: { category: 'Icon' },
     },
     iconRight: {
-      control: { type: "boolean" },
+      control: { type: 'boolean' },
       defaultValue: true,
-      description: "Show icon on the left side",
-      table: { category: "Icon" },
+      description: 'Show icon on the left side',
+      table: { category: 'Icon' },
+    },
+    isLoading: {
+      table: { category: 'States' }
     },
     disabled: {
-      table: { category: "Basic" }
+      table: { category: 'States' }
+    },
+    onClick: {
+      table: { category: 'Interaction' }
     }
   },
   parameters: {
     layout: 'centered',
     design: {
-      type: "figma",
-      url: "https://www.figma.com/design/1RQVVA3w5rXz3qznV6USuz/%F0%9F%93%96-Ascenda-Components?node-id=14920-45549&t=4dJcRW3aGCa8Sa9E-4"
-    }
+      type: 'figma',
+      url: 'https://www.figma.com/design/1RQVVA3w5rXz3qznV6USuz/%F0%9F%93%96-Ascenda-Components?node-id=14920-45549&t=4dJcRW3aGCa8Sa9E-4'
+    },
   },
 }
 
@@ -71,13 +64,15 @@ type Story = StoryObj<typeof meta>;
 /** The `Primary Button` is the main call-to-action (CTA) element used throughout the interface. It stands out with a strong, solid background color and is typically used for key actions that require user attention. */
 export const Primary: Story = {
   args: {
-    variant: "primary",
+    variant: 'primary',
     label: 'Label',
     align: 'left',
     size: 'large',
+    icon: 'arrowRightFull',
     iconLeft: false,
     iconRight: true,
-    maxWidth: false,
+    fullWidth: false,
+    isLoading: false,
     disabled: false,
     mode: 'light',
   },
@@ -86,20 +81,22 @@ export const Primary: Story = {
 /** The `Secondary Button` provides a less prominent alternative to the primary button. It features a subtle, outlined style and is used for less critical actions. */
 export const Secondary: Story = {
   args: {
-    variant: "secondary",
+    variant: 'secondary',
     label: 'Label',
     align: 'left',
     size: 'large',
+    icon: 'arrowRightFull',
     iconLeft: false,
     iconRight: true,
-    maxWidth: false,
+    fullWidth: false,
+    isLoading: false,
     disabled: false,
     mode: 'light'
   },
   parameters: {
     design: {
-      type: "figma",
-      url: "https://www.figma.com/design/1RQVVA3w5rXz3qznV6USuz/%F0%9F%93%96-Ascenda-Components?node-id=14920-45590&t=4dJcRW3aGCa8Sa9E-4"
+      type: 'figma',
+      url: 'https://www.figma.com/design/1RQVVA3w5rXz3qznV6USuz/%F0%9F%93%96-Ascenda-Components?node-id=14920-45590&t=4dJcRW3aGCa8Sa9E-4'
     }
   }
 };
