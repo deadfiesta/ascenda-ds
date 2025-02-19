@@ -1,0 +1,13 @@
+import { Meta, Story } from '@storybook/blocks';
+import { Swatches, Swatch } from './ColorSwatches';
+import colors from '../data/colors.json';
+
+<Meta title="System/Colors" />
+
+<Swatches>
+{Object.entries(colors.brandColors).map(([key, obj], i)=> {
+  console.log(obj)
+  return (
+  <Swatch colorData={obj} />
+)})}
+</Swatches>

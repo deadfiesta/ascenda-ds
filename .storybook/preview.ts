@@ -3,6 +3,11 @@ import "../src/ascenda.css";
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        order: ['System', ['Colors', 'Icons'], 'Components']
+      }
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -11,5 +16,6 @@ const preview: Preview = {
     },
   },
 };
+
 
 export default preview;

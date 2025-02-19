@@ -16,7 +16,13 @@
     --color-cloudburst-700: oklch(24.41% 0.066 275.48);
     --color-cloudburst-800: oklch(22.36% 0.0581 274.98);
     --color-cloudburst-900: oklch(20.36% 0.0496 275.92);
+    --color-coloudburst-subtle: oklch(30.17% 0.089 274.61 / 0.1);
+    --color-coloudburst-standard: oklch(30.17% 0.089 274.61 / 0.25);
+    --color-coloudburst-heavy: oklch(20.36% 0.0496 275.92 / 0.8);
 
+   
+
+    /* text alias */
     --color-cloudburst-extralight: var(--color-cloudburst-200);
     --color-cloudburst-light: var(--color-cloudburst-300);
     --color-cloudburst-medium: var(--color-cloudburst-400);
@@ -35,6 +41,7 @@
     --color-flamingo-800: oklch(46.24% 0.1169 15.15);
     --color-flamingo-900: oklch(40.92% 0.1011 15.12);
 
+    /* text alias */
     --color-flamingo-light: var(--color-flamingo-300);
     --color-flamingo-medium: var(--color-flamingo-500);
     --color-flamingo-dark: var(--color-flamingo-700);
@@ -52,10 +59,12 @@
     --color-shakespeare-800: oklch(45.66% 0.0877 227.51);
     --color-shakespeare-900: oklch(40.29% 0.0773 227.86);
 
+    /* text alias */
     --color-shakespeare-light: var(--color-shakespeare-300);
     --color-shakespeare-medium: var(--color-shakespeare-500);
     --color-shakespeare-dark: var(--color-shakespeare-700);
 
+    /* focus alias */
     --color-focus-ring: var(--color-shakespeare-300);
 
     /* branding-orchid */
@@ -71,6 +80,7 @@
     --color-orchid-800: oklch(32.58% 0.173061 300.9025);
     --color-orchid-900: oklch(28.77% 0.1527 301.03);
 
+    /* text alias */
     --color-orchid-light: var(--color-orchid-300);
     --color-orchid-medium: var(--color-orchid-500);
     --color-orchid-dark: var(--color-orchid-700);
@@ -88,6 +98,7 @@
     --color-error-800: oklch(37.63% 0.1429 27.65); 
     --color-error-900: oklch(33.15% 0.1236 27.32);
 
+    /* text alias */
     --color-error-medium: var(--color-error-500);
     --color-error-dark: var(--color-error-700);
 
@@ -104,6 +115,7 @@
     --color-warning-800: oklch(56.71% 0.117 81.42); 
     --color-warning-900: oklch(49.93% 0.1029 81.96);
 
+    /* text alias */
     --color-warning-medium: var(--color-warning-500);
     --color-warning-dark: var(--color-warning-700);
 
@@ -120,6 +132,7 @@
     --color-success-800: oklch(45.74% 0.1045 156.29); 
     --color-success-900: oklch(40.45% 0.0907 156.66);
 
+    /* text alias */
     --color-success-medium: var(--color-success-500);
     --color-success-dark: var(--color-success-700);
 
@@ -136,6 +149,7 @@
     --color-info-800: var(--color-shakespeare-800); 
     --color-info-900: var(--color-shakespeare-900);
 
+    /* text alias */
     --color-info-medium: var(--color-info-500);
     --color-info-dark: var(--color-info-700);
 
@@ -151,6 +165,7 @@
     --color-neutral-800: oklch(32.11% 0 0);
     --color-neutral-900: oklch(19.13% 0 0);
 
+    /* text alias */
     --color-neutral-white: var(--color-neutral-100);
     --color-neutral-light: var(--color-neutral-400);
     --color-neutral-medium: var(--color-neutral-500);
@@ -159,10 +174,11 @@
 
     /* max width */
     --container-button-maxwidth: 24rem;
+    --font-lexend: "Lexend", "Verdana", sans-serif;
 }
 
 body {
-    font-family: "Lexend", "Verdana", sans-serif;
+    font-family: "Lexend", "Verdana", sans-serif !important;
     font-size: 1rem;
     font-optical-sizing: auto;
     -webkit-font-smoothing: antialiased;

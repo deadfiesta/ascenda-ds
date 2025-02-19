@@ -1,0 +1,84 @@
+{
+    "brandColors": {
+        "cloudburst": {
+            "name": "Cloudburst",
+            "description": "Cloudburst is the primary brand color, used for a variety of things: from subtle background colors, to titles, body copy and buttons. Most elements in our UI design use Cloudburst.",
+            "shades": {
+                "hex": {
+                    "100": "#F8F9FA",
+                    "150": "#E9EAEF",
+                    "200": "#CED0DB",
+                    "250": "#ADAFC2",
+                    "300": "#9194AD",
+                    "400": "#595E83",
+                    "500": "#22285A",
+                    "600": "#1D224D",
+                    "700": "#181C3F",
+                    "800": "#141836",
+                    "900": "#11142D"
+                },
+                "oklch": {
+                    "100": "oklch(98.16% 0.0017 247.84)",
+                    "150": "oklch(93.77% 0.0068 277.16)",
+                    "200": "oklch(85.93% 0.0153 277.82)",
+                    "250": "oklch(75.85% 0.0271 280.95)",
+                    "300": "oklch(67.26% 0.037 279.95)",
+                    "400": "oklch(49.27% 0.0595 278.03)",
+                    "500": "oklch(30.17% 0.089 274.61)",
+                    "600": "oklch(27.36% 0.0785 274.97)",
+                    "700": "oklch(24.41% 0.066 275.48)",
+                    "800": "oklch(22.36% 0.0581 274.98)",
+                    "900": "oklch(20.36% 0.0496 275.92)"
+                }
+            }
+        },
+        "cloudburstTranslucent": {
+            "name": "Cloudburst (Translucent)",
+            "description": "The Cloudburst Translucent features our primary brand color in various shades and opacities, specifically designed for use as drop shadows in UI elements.",
+            "shades": {
+                "hex": {
+                    "500/10": "rgba(34, 40, 90, .1)",
+                    "500/25": "rgba(34, 40, 90, .25)",
+                    "900/80": "rgba(17, 20, 45, .8)"
+                },
+                "oklch": {
+                    "subtle": "oklch(30.17% 0.089 274.61 / .1)",
+                    "standard": "oklch(30.17% 0.089 274.61 / .25)",
+                    "heavy": "oklch(20.36% 0.0496 275.92 / .8)"
+                }
+            }
+        },
+        "flamingo": {
+            "name": "Flamingo",
+            "description": "To highlight elements that should stand out, or simply as decoration, our secondary color Flamingo is used. Elements such as our Flare, titles, alert badges and selected nav items all use Flamingo.",
+            "shades": {
+                "hex": {
+                    "100": "#FEFAFB",
+                    "150": "#FDEFF1",
+                    "200": "#FBDCDF",
+                    "250": "#F8C3CA",
+                    "300": "#F6AFB7",
+                    "400": "#F28693",
+                    "500": "#ED5E6F",
+                    "600": "#C9505E",
+                    "700": "#A6424E",
+                    "800": "#8E3843",
+                    "900": "#772F38"
+                },
+                "oklch": {
+                    "100": "oklch(98.84% 0.0044 359.99)",
+                    "150": "oklch(96.37% 0.0153 7.48)",
+                    "200": "oklch(92.09% 0.0346 11.15)",
+                    "250": "oklch(86.6% 0.0612 9.55)",
+                    "300": "oklch(82.3% 0.0837 11.6)",
+                    "400": "oklch(74.09% 0.1321 13.16)",
+                    "500": "oklch(66.95% 0.1765 16.13)",
+                    "600": "oklch(59.37% 0.1541 16.17)",
+                    "700": "oklch(51.71% 0.132 15.74)",
+                    "800": "oklch(46.24% 0.1169 15.15)",
+                    "900": "oklch(40.92% 0.1011 15.12)"
+                }
+            }
+        }
+    }
+}
