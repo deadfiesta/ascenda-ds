@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import './styles.css';
 
-
 interface SwatchItemProps {
     shade: string,
     color: string,
@@ -31,7 +30,7 @@ interface SwatchesProps {
 export const SwatchItem = ({ shade, color }: SwatchItemProps) => {
     console.log(color)
     return (
-        <div className="flex flex-col rounded-xl max-w-40 h-28 shadow-lg shadow-cloudburst-500/10 bg-checkered overflow-clip">
+        <div className="flex flex-col rounded-lg max-w-40 h-28 shadow-lg shadow-cloudburst-500/10 bg-checkered overflow-clip">
             <div style={{ background: color }} className='grow'></div>
             <div className="flex flex-col bg-neutral-100 p-3">
                 <span style={{ fontWeight: '700' }} className="font-bold">{shade}</span>
@@ -60,7 +59,7 @@ export const Swatch = ({ colorData }: SwatchProps) => {
 export const Swatches = ({ children }: SwatchesProps) => {
 
     return (
-        <div className="flex flex-col gap-24 w-full text-xs">
+        <div className="flex flex-col gap-24 py-4 pb-8 w-full text-xs">
             {children}
         </div>
     )

@@ -4,9 +4,16 @@ import colors from '../data/colors.json';
 
 <Meta title="System/Colors" />
 
+# Branding Colors
 <Swatches>
 {Object.entries(colors.brandColors).map(([key, obj], i)=> {
-  console.log(obj)
+  return (
+  <Swatch colorData={obj} />
+)})}
+</Swatches>
+# System Colors
+<Swatches>
+{Object.entries(colors.systemColors).map(([key, obj], i)=> {
   return (
   <Swatch colorData={obj} />
 )})}

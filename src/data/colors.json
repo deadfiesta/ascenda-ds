@@ -79,6 +79,168 @@
                     "900": "oklch(40.92% 0.1011 15.12)"
                 }
             }
+        },
+        "shakespeare": {
+            "name": "Shakespeare",
+            "description": "Another accent color we use is Shakespeare. You will see this color used in elements such as hyperlinks, icons and tickboxes.",
+            "shades": {
+                "hex": {
+                    "100": "#F8FCFE",
+                    "150": "#E6F6FA",
+                    "200": "#C8EAF5",
+                    "250": "#A3DCEE",
+                    "300": "#82D0E8",
+                    "400": "#44B8DD",
+                    "500": "#05A0D1",
+                    "600": "#0488B2",
+                    "700": "#047092",
+                    "800": "#03607D",
+                    "900": "#035069"
+                },
+                "oklch": {
+                    "100": "oklch(98.86% 0.005 228.82)",
+                    "150": "oklch(96.25% 0.0177 214.38)",
+                    "200": "oklch(91.6% 0.0386 219.31)",
+                    "250": "oklch(86.14% 0.0633 219.32)",
+                    "300": "oklch(81.57% 0.0838 219.52)",
+                    "400": "oklch(73.28% 0.1147 223.05)",
+                    "500": "oklch(66.02% 0.1295 229.09)",
+                    "600": "oklch(58.62% 0.1147 228.96)",
+                    "700": "oklch(50.94% 0.0984 228.1)",
+                    "800": "oklch(45.66% 0.0877 227.51)",
+                    "900": "oklch(40.29% 0.0773 227.86)"
+                }
+            }
+        },
+        "orchid": {
+            "name": "Orchid",
+            "description": "Our tertiary colour Orchid is used very infrequently, and is only used in elements such as charts, where a large number of colour(shade)s are required.",
+            "shades": {
+                "hex": {
+                    "100": "#FBF7FE",
+                    "150": "#F1E6FA",
+                    "200": "#E0C7F4",
+                    "250": "#CCA1ED",
+                    "300": "#BA80E7",
+                    "400": "#9740DB",
+                    "500": "#7400CF",
+                    "600": "#6300B0",
+                    "700": "#510091",
+                    "800": "#46007C",
+                    "900": "#3A0068"
+                },
+                "oklch": {
+                    "100": "oklch(98.12% 0.0101 311.18)",
+                    "150": "oklch(93.95% 0.0291 310.15)",
+                    "200": "oklch(86.48% 0.0667 309.95)",
+                    "250": "oklch(77.49% 0.1149 309.73)",
+                    "300": "oklch(69.83% 0.1565 308.83)",
+                    "400": "oklch(56.33% 0.2256 305.96)",
+                    "500": "oklch(56.33% 0.2256 305.96)",
+                    "600": "oklch(41.74% 0.2231 299.72)",
+                    "700": "oklch(36.25% 0.19356 299.9572)",
+                    "800": "oklch(32.58% 0.173061 300.9025)",
+                    "900": "oklch(28.77% 0.1527 301.03)"
+                }
+            }
+        }
+    },
+    "systemColors": {
+        "error": {
+            "name": "Error",
+            "description": "Error colors are used across error states and in 'destructive' actions. They communicate a destructive/negative action, such as removing a user from your team.",
+            "shades": {
+                "hex": {
+                    "100": "#FEF8F8",
+                    "150": "#FAE8E8",
+                    "200": "#F4CCCC",
+                    "250": "#EDAAAA",
+                    "300": "#E78C8C",
+                    "400": "#DA5252",
+                    "500": "#CE1818",
+                    "600": "#AF1414",
+                    "700": "#901111",
+                    "800": "#7C0E0E",
+                    "900": "#670C0C"
+                },
+                "oklch": {
+                    "100": "oklch(98.37% 0.0064 17.27)",
+                    "150": "oklch(94.53% 0.0197 17.51)",
+                    "200": "oklch(87.94% 0.0453 18.05)",
+                    "250": "oklch(80.13% 0.0792 18.96)",
+                    "300": "oklch(73.52% 0.1113 20.09)",
+                    "400": "oklch(62.01% 0.1712 23.52)",
+                    "500": "oklch(54.28% 0.2112 28.12)",
+                    "600": "oklch(48.14% 0.1863 28.01)",
+                    "700": "oklch(41.87% 0.1599 27.76)",
+                    "800": "oklch(37.63% 0.1429 27.65)",
+                    "900": "oklch(33.15% 0.1236 27.32)"
+                }
+            }
+        },
+        "warning": {
+            "name": "Warning",
+            "description": "Warning colors can communicate that an action is potentially destructive or 'on-hold'. These colors are commonly used in confirmations to grab the users' attention.",
+            "shades": {
+                "hex": {
+                    "100": "#FFFDF7",
+                    "150": "#FFF8E6",
+                    "200": "#FFEFC7",
+                    "250": "#FFE5A1",
+                    "300": "#FFDC80",
+                    "400": "#FFCA40",
+                    "500": "#FFB800",
+                    "600": "#D99C00",
+                    "700": "#B38100",
+                    "800": "#996E00",
+                    "900": "#805C00"
+                },
+                "oklch": {
+                    "100": "oklch(99.39% 0.0082 91.48)",
+                    "150": "oklch(97.98% 0.0248 89.21)",
+                    "200": "oklch(95.49% 0.0547 88.81)",
+                    "250": "oklch(92.78% 0.0903 89.48)",
+                    "300": "oklch(90.49% 0.118 89.16)",
+                    "400": "oklch(86.35% 0.1575 86.61)",
+                    "500": "oklch(82.72% 0.171067 80.5261)",
+                    "600": "oklch(73.22% 0.1514 80.51)",
+                    "700": "oklch(63.61% 0.1313 81.2)",
+                    "800": "oklch(56.71% 0.117 81.42)",
+                    "900": "oklch(49.93% 0.1029 81.96)"
+                }
+            }
+        },
+        "success": {
+            "name": "Success",
+            "description": "Success colors communicate a positive action, positive trend, or a successful confirmation. If you're using green as your primary color, it can be helpful to introduce a different hue for your success green.",
+            "shades": {
+                "hex": {
+                    "100": "#F8FDFA",
+                    "150": "#E8F7F0",
+                    "200": "#CCEDDE",
+                    "250": "#AAE1C7",
+                    "300": "#8CD7B3",
+                    "400": "#53C28D",
+                    "500": "#19AE67",
+                    "600": "#159458",
+                    "700": "#127A48",
+                    "800": "#0F683E",
+                    "900": "#0D5734"
+                },
+                "oklch": {
+                   "100": "oklch(98.95% 0.0066 160.08)",
+                   "150": "oklch(96.31% 0.0183 166.38)",
+                   "200": "oklch(91.81% 0.04 166.31)",
+                   "250": "oklch(86.46% 0.0671 164.28)",
+                   "300": "oklch(82% 0.0909 162.73)", 
+                   "400": "oklch(73.55% 0.1287 159.93)",
+                   "500": "oklch(66.21% 0.1569 155.31)",
+                   "600": "oklch(58.82% 0.1379 155.67)",
+                   "700": "oklch(51.18% 0.119 155.66)",
+                   "800": "oklch(45.74% 0.1045 156.29)", 
+                   "900": "oklch(40.45% 0.0907 156.66)"
+                }
+            }
         }
     }
 }
