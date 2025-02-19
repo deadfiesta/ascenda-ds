@@ -36,7 +36,7 @@ const meta: Meta<typeof Button> = {
     iconRight: {
       control: { type: 'boolean' },
       defaultValue: true,
-      description: 'Show icon on the left side',
+      description: 'Show icon on the right side',
       table: { category: 'Icon' },
     },
     isLoading: {
