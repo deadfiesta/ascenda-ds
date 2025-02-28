@@ -15,6 +15,12 @@ const preview: Preview = {
       },
     },
   },
+  globals: {
+    a11y: {
+      // Optional flag to prevent the automatic check
+      manual: true,
+    },
+  },
 };
 
 
