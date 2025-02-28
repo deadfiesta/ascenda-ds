@@ -32,22 +32,6 @@
                 }
             }
         },
-        "cloudburstTranslucent": {
-            "name": "Cloudburst (Translucent)",
-            "description": "The Cloudburst Translucent features our primary brand color in various shades and opacities, specifically designed for use as drop shadows in UI elements.",
-            "shades": {
-                "hex": {
-                    "500/10": "rgba(34, 40, 90, .1)",
-                    "500/25": "rgba(34, 40, 90, .25)",
-                    "900/80": "rgba(17, 20, 45, .8)"
-                },
-                "oklch": {
-                    "subtle": "oklch(30.17% 0.089 274.61 / .1)",
-                    "standard": "oklch(30.17% 0.089 274.61 / .25)",
-                    "heavy": "oklch(20.36% 0.0496 275.92 / .8)"
-                }
-            }
-        },
         "flamingo": {
             "name": "Flamingo",
             "description": "To highlight elements that should stand out, or simply as decoration, our secondary color Flamingo is used. Elements such as our Flare, titles, alert badges and selected nav items all use Flamingo.",
@@ -136,7 +120,7 @@
                     "250": "oklch(77.49% 0.1149 309.73)",
                     "300": "oklch(69.83% 0.1565 308.83)",
                     "400": "oklch(56.33% 0.2256 305.96)",
-                    "500": "oklch(56.33% 0.2256 305.96)",
+                    "500": "oklch(46.92% 0.2516 299.17)",
                     "600": "oklch(41.74% 0.2231 299.72)",
                     "700": "oklch(36.25% 0.19356 299.9572)",
                     "800": "oklch(32.58% 0.173061 300.9025)",

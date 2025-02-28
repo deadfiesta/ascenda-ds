@@ -47,7 +47,7 @@ export const Swatch = ({ colorData }: SwatchProps) => {
                 <div className="uppercase font-bold">{colorData.name}</div>
                 <div className="text-cloudburst-medium">{colorData.description}</div>
             </div>
-            <div className="grid grid-cols-11 gap-4 w-full">
+            <div className="grid grid-cols-11 gap-2 w-full">
                 {Object.entries(colorData.shades?.hex || {}).map(([shade, color]) => (
                     <SwatchItem key={shade} shade={shade} color={color} />
                 ))}
