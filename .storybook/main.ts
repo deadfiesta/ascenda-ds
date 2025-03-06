@@ -14,5 +14,11 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  async viteFinal(config, { configType }) {
+    config.base = process.env.BASE_PATH || config.base;
+
+    // return the customized config
+    return config;
+  },
 };
 export default config;
