@@ -1,0 +1,5 @@
+import{S as n}from"./Spinner-4uK4u6Cq.js";import"./jsx-runtime-Cf8x2fCZ.js";import"./index-yBjzXJbu.js";import"./index-Dh8cFXwY.js";import"./clsx-B-dksMZM.js";const d={component:n,title:"Components/Loader",tags:["autodocs"],argTypes:{size:{table:{category:"Basic"}},className:{table:{disable:!0}}},parameters:{layout:"centered",design:{type:"figma",url:"https://www.figma.com/design/1RQVVA3w5rXz3qznV6USuz/%F0%9F%93%96-Ascenda-Components?node-id=9207-11946&t=aYcd7afGJpfnApwV-4"},docs:{description:{component:"This `Spinner` is a non-progressive loading indicator that provides visual feedback while content is being loaded. It continuously animates in a circular motion to indicate an ongoing process without showing specific progress."}}}},e={args:{size:48}};var o,s,a;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {
+    size: 48
+  }
+}`,...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const m=["LoaderSpinner"];export{e as LoaderSpinner,m as __namedExportsOrder,d as default};
